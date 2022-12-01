@@ -42,7 +42,7 @@ public class TestSauceDemo {
     public void openProductTest() {
         loginPage.authorize("standard_user", "secret_sauce");
         Assert.assertEquals(inventoryPage.getTitleElement().getText(), "PRODUCTS");
-    inventoryPage.clickOnProductByLabel("Sauce Labs Bolt T-Shirt");
+        inventoryPage.clickOnProductByLabel("Sauce Labs Bolt T-Shirt");
         System.out.println();
     }
 
